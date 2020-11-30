@@ -4,6 +4,10 @@ from bs4 import BeautifulSoup
 
 class FolhaCrawler(Crawler):
 
+    def __init__(self):
+        self.nome = 'Folha de São Paulo'
+        self.url = 'https://www.folha.uol.com.br/'
+
     def get_data(self):
         html_text = requests.get(self.url).text
         soup = BeautifulSoup(html_text, 'html.parser')
