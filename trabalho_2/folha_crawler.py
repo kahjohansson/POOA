@@ -2,6 +2,7 @@ from crawler import Crawler
 import requests
 from bs4 import BeautifulSoup
 
+
 class FolhaCrawler(Crawler):
 
     def __init__(self):
