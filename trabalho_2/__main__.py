@@ -1,4 +1,6 @@
 from folha_crawler import FolhaCrawler
+from globo_crawler import GloboCrawler
+from uol_crawler import UolCrawler
 import yaml
 
 
@@ -19,6 +21,7 @@ def main():
             if processings is not None:
                 for processing in processings:
                     eval(processing)()
+        print(news)
 
 
 if __name__ == "__main__":
