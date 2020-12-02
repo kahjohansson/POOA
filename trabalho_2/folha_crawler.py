@@ -21,7 +21,9 @@ class FolhaCrawler(Crawler):
             url = c['href']
             title = c.find('h2')
             if title is not None:
+                url = url.strip()
                 title = title.get_text()
+                title = title.strip()
                 data.append((title,url))            
 
         return data

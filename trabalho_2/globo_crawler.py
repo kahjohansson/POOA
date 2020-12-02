@@ -19,6 +19,8 @@ class GloboCrawler(Crawler):
 			url = c.find('a')['href']
 			title = c.find('p').get_text()
 			if title is not None:
+				url = url.strip()
+				title = title.strip()
 				data.append((title,url))
 		
 		return data
