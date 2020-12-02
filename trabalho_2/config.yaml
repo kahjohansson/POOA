@@ -1,4 +1,4 @@
 crawler:
-    - FolhaCrawler
+    - GloboCrawler
 
 processing:
