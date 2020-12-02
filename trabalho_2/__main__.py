@@ -3,8 +3,8 @@
 from folha_crawler import FolhaCrawler
 from globo_crawler import GloboCrawler
 from uol_crawler import UolCrawler
+from export_csv import ExportCsv
 import yaml
-import csv
 
 
 
@@ -24,17 +24,8 @@ def main():
 
             if processings is not None:
                 for processing in processings:
-                    eval(processing)()
-
-    #Escrita csv utf8 pra ler no vscode, latin1 pro excell.
-    
-    with open('teste.csv', 'w', encoding='utf8', newline='') as file:
-    
-        writer = csv.writer(file)
-        
-        writer.writerow(["titulo", "link"])
-        for tupla in news:
-           writer.writerow([tupla[0],tupla[1]])
+                    p = eval(processing)(c.nome, news)
+                    p.process()
             
 
 if __name__ == "__main__":
