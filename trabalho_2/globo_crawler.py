@@ -9,8 +9,8 @@ class GloboCrawler(Crawler):
 		self.url = 'https://www.globo.com/'
 		
 	def get_data(self):
-		html_text = requests.get(self.url).text
-		soup = BeautifulSoup(html_text, 'html.parser', from_encoding="utf-8")
+		html_text = requests.get(self.url).content
+		soup = BeautifulSoup(html_text, 'html.parser')
 		data = []
 
 		crawled = soup.find_all('div', class_='hui-premium')

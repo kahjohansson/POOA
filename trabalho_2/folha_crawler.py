@@ -10,7 +10,7 @@ class FolhaCrawler(Crawler):
         self.url = 'https://www.folha.uol.com.br/'
 
     def get_data(self):
-        html_text = requests.get(self.url).text
+        html_text = requests.get(self.url).content
         soup = BeautifulSoup(html_text, 'html.parser')
         data = []
             
