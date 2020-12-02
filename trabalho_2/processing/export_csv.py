@@ -10,7 +10,6 @@ class ExportCsv(Processing):
 
     def process(self):
         
-        #Escrita csv utf8 pra ler no vscode, latin1 pro excell.
         output_path = 'output/' + self.nome_site + '.csv'
         with open(output_path, 'w+', encoding='utf8') as file:
             writer = csv.writer(file, delimiter=';')
