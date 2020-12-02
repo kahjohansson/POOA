@@ -3,5 +3,5 @@ Repositório dos trabalhos práticos da disciplina Programação Orientada a Obj
 
 Integrantes do Projeto:
 - Karina Mayumi Johansson
-- Leonardo Rodrigues Donderi
+- Leonardo Donderi Rodrigues
 - Martin Heckmann
