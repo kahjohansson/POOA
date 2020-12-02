@@ -1,4 +1,4 @@
-from process import Processing
+from .process import Processing
 import csv
 
 

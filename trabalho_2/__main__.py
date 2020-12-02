@@ -1,9 +1,9 @@
 #encoding: utf-8
 
-from folha_crawler import FolhaCrawler
-from globo_crawler import GloboCrawler
-from uol_crawler import UolCrawler
-from export_csv import ExportCsv
+from crawler.folha_crawler import FolhaCrawler
+from crawler.globo_crawler import GloboCrawler
+from crawler.uol_crawler import UolCrawler
+from processing.export_csv import ExportCsv
 import yaml
 
 
