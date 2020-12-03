@@ -1,6 +1,11 @@
 crawler:
     - FolhaCrawler
-    - GloboCrawler
+    - UolCrawler
 
 processing:
     - ExportCsv
+    - FilterNews
+
+params:
+    FilterNews: [[covid, bolsonaro, câmara]]
+        
