@@ -9,7 +9,7 @@ Respeitando os dois primeiros conceitos SOLID:
 O projeto propôe encontrar e baixar títulos de notícias bem como seus respectivos links dos seguintes sites:
 * [UOL Notícias](https://noticias.uol.com.br)
 * [Folha de S. Paulo](https://www.folha.uol.com.br)
-* -
+* [O Globo}(https://oglobo.globo.com/)
 
 Para isso utilizamos a biblioteca [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/), que facilita a obtenção de informação a partir do HTML de páginas web.
 
