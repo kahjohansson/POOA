@@ -11,7 +11,7 @@ O projeto propôe encontrar e baixar títulos de notícias bem como seus respect
 * [Folha de S. Paulo](https://www.folha.uol.com.br)
 * -
 
-Para isso, utilizamos a biblioteca [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/), que facilita a obtenção de informação a partir do HTML de páginas web.
+Para isso utilizamos a biblioteca [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/), que facilita a obtenção de informação a partir do HTML de páginas web.
 
 Além de extrair os dados, os organizamos de duas formas: 
 * Formato .csv utilizando o caractere `;` como separador.
@@ -20,14 +20,22 @@ Além de extrair os dados, os organizamos de duas formas:
 
 ## Pré Configuração.
 
-Para que o projeto funcione corretamente, é necessário a instalação de algumas bibliotecas e para isso, recomendamos o [pip](https://pip.pypa.io/en/stable/installing/)
+Para que o projeto funcione corretamente é necessário a instalação de algumas bibliotecas e para isso, recomendamos o [pip](https://pip.pypa.io/en/stable/installing/)
 
 [Python](https://www.python.org/downloads/)
+```
+    sudo apt install python3
+```
 
 [Beautiful Soup 4](https://pypi.org/project/bs4/)
+```
+    pip install bs4
+```
 
 [CSV](https://pypi.org/project/python-csv/)
-
+```
+    pip install python-csv
+```  
 
 ## Como usar
 Deixamos pré-configurado para executar todos os crawlers criados e ambos os processamentos, tanto para exportação em um .csv quanto o filtro por palavras. Portanto, para executar sem nenhuma mudança, basta usar:
