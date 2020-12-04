@@ -1,6 +1,5 @@
 crawler:
-    - FolhaCrawler
-    - UolCrawler
+    - OGloboCrawler
 
 processing:
     - ExportCsv
