@@ -88,8 +88,8 @@ class JornalZCrawler(Crawler):
 
 ```py
 def __init__(self):
-        self.nome = 'Folha de São Paulo'
-        self.url = 'https://www.folha.uol.com.br/'
+        self.nome = 'Nome Do Jornal'
+        self.url = 'https://exemplo.com.br'
 ```
 
 5. Definir o método que irá efetivamente fazer o crawler como `get_data(self)`, que retorne uma lista.
