@@ -108,7 +108,28 @@ def __init__(self):
 Para criar um crawler do 0, recomendamos fortemente a documentação do [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/) ou sua versão em [português](https://www.crummy.com/software/BeautifulSoup/bs4/doc.ptbr/) 
 
 ### Para implementar um novo tipo de pós processamento, deve-se:
+1. Criar um novo arquivo na pasta `processing`.
+2. Importar a classe pai `Processing`.
+``from .process import Processing``
+3. Criar uma classe com nome intuitivo filha de `Processing`.
 
+```
+py
+class BagOfWords(Processing):
+```
 
+4. Definir o método `process` que irá fazer o processamento desejado.
+```
+py
+def process(self, <parâmetros>):
+    '''
+        code
+    '''
+```
+5. Caso necessário, alterar a seção `params` no arquivo de configurações para que ela contenha o nome da classe seguida dos parâmetros utilizados.
+```
+params:
+    BagOfWords: [[<parâmetros>]]
+```
 
 
