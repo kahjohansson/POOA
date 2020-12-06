@@ -130,5 +130,5 @@ def process(self, <parâmetros>):
 5. Caso necessário, alterar a seção `params` no arquivo de configurações para que ela contenha o nome da classe seguida dos parâmetros utilizados.
 ```
 params:
-    BagOfWords: [[<parâmetros>]]
+    BagOfWords: [<parâmetros>]
 ```
