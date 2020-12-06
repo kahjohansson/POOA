@@ -35,7 +35,12 @@ Para que o projeto funcione corretamente é necessária a instalação de alguma
 [CSV](https://pypi.org/project/python-csv/)
 ```
     pip install python-csv
-```  
+```
+
+[PyYAML](https://pypi.org/project/PyYAML/)
+```
+pip install PyYAML
+```
 
 ## Como usar
 Deixamos pré-configurado para executar todos os crawlers criados e ambos os processamentos, tanto para exportação em um .csv quanto o filtro por palavras. Portanto, para executar sem nenhuma mudança, basta rodar:
