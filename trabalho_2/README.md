@@ -20,7 +20,7 @@ Além de extrair os dados, os organizamos de duas formas:
 
 ## Pré Configuração.
 
-Para que o projeto funcione corretamente é necessário a instalação de algumas bibliotecas e para isso, recomendamos o [pip](https://pip.pypa.io/en/stable/installing/)
+Para que o projeto funcione corretamente é necessária a instalação de algumas bibliotecas e para isso, recomendamos o [pip](https://pip.pypa.io/en/stable/installing/)
 
 [Python](https://www.python.org/downloads/)
 ```
@@ -38,21 +38,22 @@ Para que o projeto funcione corretamente é necessário a instalação de alguma
 ```  
 
 ## Como usar
-Deixamos pré-configurado para executar todos os crawlers criados e ambos os processamentos, tanto para exportação em um .csv quanto o filtro por palavras. Portanto, para executar sem nenhuma mudança, basta usar:
+Deixamos pré-configurado para executar todos os crawlers criados e ambos os processamentos, tanto para exportação em um .csv quanto o filtro por palavras. Portanto, para executar sem nenhuma mudança, basta rodar:
 
 ```bash
     python3 __main__.py
 ```
 
-Para alguma modificação, acesse o arquivo de configuração disponível em `config.yaml`. O arquivo de configuração possui o seguinte formato:
+Para realizar alguma modificação, acesse o arquivo de configuração disponível em `config.yaml`. O arquivo de configuração possui o seguinte formato:
 * `crawler`: Crawlers que devem ser executados.
 * `processing`: Tipos de pós processamento que devem ser executados.
-* `params`: Referente a classe `FilterNews`, contêm as palavras que devem ser buscadas em formato de lista.
+* `params`: Parâmetros dos métodos das classes, utilizar se necessário.
 
 ```
 crawler:
     - FolhaCrawler
     - UolCrawler
+    - OGloboCrawler
 
 processing:
     - ExportCsv
@@ -105,7 +106,7 @@ def __init__(self):
     return data
 ```
 
-Para criar um crawler do 0, recomendamos fortemente a documentação do [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/) ou sua versão em [português](https://www.crummy.com/software/BeautifulSoup/bs4/doc.ptbr/) 
+Para criar um crawler do zero, recomendamos fortemente a documentação do [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/) ou sua versão em [português](https://www.crummy.com/software/BeautifulSoup/bs4/doc.ptbr/) 
 
 ### Para implementar um novo tipo de pós processamento, deve-se:
 1. Criar um novo arquivo na pasta `processing`.
@@ -118,7 +119,7 @@ py
 class BagOfWords(Processing):
 ```
 
-4. Definir o método `process` que irá fazer o processamento desejado.
+4. Definir o método `process` que irá realizar o processamento desejado.
 ```
 py
 def process(self, <parâmetros>):
@@ -131,5 +132,3 @@ def process(self, <parâmetros>):
 params:
     BagOfWords: [[<parâmetros>]]
 ```
-
-
