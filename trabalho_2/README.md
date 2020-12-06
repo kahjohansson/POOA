@@ -6,7 +6,7 @@ Respeitando os dois primeiros conceitos SOLID:
 * Princípio aberto-fechado
 * Princípio da responsabilidade-única.
 
-O projeto propôe encontrar e baixar títulos de notícias bem como seus respectivos links dos seguintes sites:
+O projeto propõe encontrar e baixar títulos de notícias bem como seus respectivos links dos seguintes sites:
 * [UOL Notícias](https://noticias.uol.com.br)
 * [Folha de S. Paulo](https://www.folha.uol.com.br)
 * [O Globo](https://oglobo.globo.com/)
